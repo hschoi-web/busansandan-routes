@@ -13,7 +13,8 @@
     sidebar: $('#sidebar'),
     tplComplex: $('#tplComplex'),
     tplZone: $('#tplZone'),
-    mapOpenLink: $('#mapOpenLink')
+    mapOpenLink: $('#mapOpenLink'),
+    brandHome: $('#brandHome')
   };
 
   const state = {
@@ -226,6 +227,11 @@
 
     els.search.addEventListener('input', (e) => applySearch(e.target.value));
 
+    els.brandHome.addEventListener('click', (e) => {
+      e.preventDefault();
+      resetToHome();
+    });
+
     window.addEventListener('hashchange', () => {
       const h = readHash();
       if (h && (
@@ -237,6 +243,23 @@
         selectRoute(h.complexId, h.zoneName, h.direction);
       }
     });
+  }
+
+  /* ---------- 첫 화면으로 초기화 ---------- */
+  function resetToHome() {
+    // 검색어 초기화
+    els.search.value = '';
+    applySearch('');
+    // localStorage / hash 초기화
+    try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+    history.replaceState(null, '', location.pathname + location.search);
+    // 첫 산단 > 첫 노선 > 출근(없으면 퇴근) 자동 선택
+    const c = state.data.complexes[0];
+    const z = c.zones[0];
+    const dir = z.commute.go != null ? 'go' : 'return';
+    selectRoute(c.id, z.name, dir);
+    // 트리 스크롤 맨 위로
+    els.tree.scrollTop = 0;
   }
 
   /* ---------- 초기 진입 노선 결정 ---------- */
