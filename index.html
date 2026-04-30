@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>부산산업단지 통근버스 통합 노선</title>
+<meta name="description" content="부산산업단지 12개 단지 통근버스 노선을 한 화면에서 검색하고 지도로 확인하세요.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/style.css?v=8">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logo.png?v=1"
+         alt="산단타요"
+         class="brand-logo"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+    <span class="brand-fallback" style="display:none" aria-hidden="true">
+      <span class="brand-emoji">🚌</span>
+      <strong>산단타요</strong>
+    </span>
+    <div class="brand-text">
+      <span>부산산업단지 통근버스 · 통합 노선</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar" aria-label="노선 트리">
+    <div class="search-box">
+      <input type="search" id="search" placeholder="🔍 산단·지역 검색…" autocomplete="off">
+    </div>
+    <nav class="tree" id="tree" role="tree" aria-label="산단 노선">
+      <div class="loading">노선 데이터를 불러오는 중…</div>
+    </nav>
+    <footer class="sidebar-foot">
+      <small>데이터 출처: <a href="https://busansandan.rideus.net" target="_blank" rel="noopener">busansandan.rideus.net</a></small>
+    </footer>
+  </aside>
+
+  <main class="detail-panel">
+    <div class="detail-head">
+      <div class="breadcrumb" id="breadcrumb" aria-live="polite">
+        <span class="bc-ph">좌측에서 노선을 선택하세요</span>
+      </div>
+      <a id="mapOpenLink" class="card-link" target="_blank" rel="noopener" hidden>새 창에서 열기 ↗</a>
+    </div>
+    <div class="map-frame-wrap">
+      <iframe id="mapFrame"
+              title="선택한 노선 지도 / 정류장 / 실시간 차량 관제"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allow="geolocation"
+              src="about:blank"></iframe>
+    </div>
+  </main>
+
+</div>
+
+<template id="tplComplex">
+  <div class="node node-complex" role="treeitem" aria-expanded="false">
+    <button class="node-row complex-row" type="button">
+      <span class="caret" aria-hidden="true">▶</span>
+      <span class="node-icon">🏢</span>
+      <span class="node-name"></span>
+      <span class="node-count" aria-hidden="true"></span>
+    </button>
+    <div class="children" role="group" hidden></div>
+  </div>
+</template>
+
+<template id="tplZone">
+  <div class="node node-zone" role="treeitem" aria-expanded="false">
+    <button class="node-row zone-row" type="button">
+      <span class="caret" aria-hidden="true">▶</span>
+      <span class="node-icon">📍</span>
+      <span class="node-name"></span>
+    </button>
+    <div class="children" role="group" hidden>
+      <button class="leaf leaf-go" type="button" data-direction="go" role="treeitem">
+        <span class="leaf-icon">🚌</span> 출근
+      </button>
+      <button class="leaf leaf-return" type="button" data-direction="return" role="treeitem">
+        <span class="leaf-icon">🏠</span> 퇴근
+      </button>
+    </div>
+  </div>
+</template>
+
+<script src="assets/app.js?v=8" defer></script>
+</body>
+</html>

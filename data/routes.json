@@ -1,0 +1,3234 @@
+{
+  "generatedAt": "2026-04-30",
+  "source": "https://busansandan.rideus.net",
+  "mapBaseUrl": "https://rideus.net/busansandan/shuttlebus/",
+  "complexes": [
+    {
+      "id": "noksan",
+      "name": "녹산산단",
+      "zones": [
+        {
+          "name": "하단",
+          "commute": {
+            "go": 833,
+            "return": 832
+          },
+          "timetable": [
+            {
+              "name": "하단역",
+              "am": [
+                "06:30",
+                "06:40",
+                "06:50",
+                "07:00",
+                "07:10",
+                "07:20",
+                "07:30",
+                "07:50"
+              ],
+              "pm": [
+                "17:50",
+                "18:05",
+                "18:20",
+                "18:40",
+                "18:55",
+                "19:35",
+                "20:05",
+                "21:10"
+              ]
+            },
+            {
+              "name": "용원입구",
+              "am": [
+                "07:20",
+                "07:30",
+                "07:40",
+                "07:50",
+                "08:00",
+                "08:10",
+                "08:20",
+                "08:40"
+              ],
+              "pm": [
+                "17:00",
+                "17:15",
+                "17:30",
+                "17:50",
+                "18:05",
+                "18:45",
+                "19:15",
+                "20:30"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "하단역 1번출구 (뚜레쥬르 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "명지새동네",
+              "isTerminal": false
+            },
+            {
+              "name": "명지지하차도 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "명지오션시티2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "르노삼성 남문",
+              "isTerminal": false
+            },
+            {
+              "name": "1번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "5번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "6번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "7번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "8번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "9번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "10번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "광명잉크",
+              "isTerminal": false
+            },
+            {
+              "name": "일광주공",
+              "isTerminal": false
+            },
+            {
+              "name": "11번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "12번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)바램",
+              "isTerminal": false
+            },
+            {
+              "name": "28번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)다우정밀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)젤텍",
+              "isTerminal": false
+            },
+            {
+              "name": "27번 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "경제진흥원 맞은편 건널목",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "사상A",
+          "commute": {
+            "go": 824,
+            "return": 825
+          },
+          "timetable": [
+            {
+              "name": "사상터미널",
+              "am": [
+                "06:45",
+                "06:55"
+              ],
+              "pm": [
+                "19:15",
+                "20:00"
+              ]
+            },
+            {
+              "name": "하단역",
+              "am": [
+                "07:00",
+                "07:15"
+              ],
+              "pm": [
+                "18:55",
+                "19:50"
+              ]
+            },
+            {
+              "name": "녹산산단",
+              "am": [
+                "07:55",
+                "08:05"
+              ],
+              "pm": [
+                "18:05",
+                "19:00"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "사상터미널 (아울렛 매장 앞 철골 주차장)",
+              "isTerminal": true
+            },
+            {
+              "name": "롯데마트",
+              "isTerminal": false
+            },
+            {
+              "name": "동아대 앞 대우에덴플라자",
+              "isTerminal": false
+            },
+            {
+              "name": "동아대 앞 한샘고시텔",
+              "isTerminal": false
+            },
+            {
+              "name": "하단역 1번출구 (다이소 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "명지새동네",
+              "isTerminal": false
+            },
+            {
+              "name": "명지지하차도 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "명지오션시티2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "르노삼성 남문",
+              "isTerminal": false
+            },
+            {
+              "name": "1번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "5번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "6번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "7번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "8번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "9번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "10번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "광명잉크",
+              "isTerminal": false
+            },
+            {
+              "name": "일광주공",
+              "isTerminal": false
+            },
+            {
+              "name": "11번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "12번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)바램",
+              "isTerminal": false
+            },
+            {
+              "name": "28번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)다우정밀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)젤텍",
+              "isTerminal": false
+            },
+            {
+              "name": "27번 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "경제진흥원 맞은편 건널목",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "사상B",
+          "commute": {
+            "go": 826,
+            "return": 827
+          },
+          "timetable": [
+            {
+              "name": "사상터미널",
+              "am": [
+                "06:40",
+                "06:50"
+              ],
+              "pm": [
+                "19:10",
+                "19:15"
+              ]
+            },
+            {
+              "name": "하단역",
+              "am": [
+                "06:55",
+                "07:05"
+              ],
+              "pm": [
+                "18:55",
+                "19:05"
+              ]
+            },
+            {
+              "name": "녹산산단",
+              "am": [
+                "07:50",
+                "08:00"
+              ],
+              "pm": [
+                "18:05",
+                "18:15"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "사상터미널 (아울렛 매장 앞 철골 주차장)",
+              "isTerminal": true
+            },
+            {
+              "name": "롯데마트",
+              "isTerminal": false
+            },
+            {
+              "name": "동아대 앞 대우에덴플라자",
+              "isTerminal": false
+            },
+            {
+              "name": "동아대 앞 한샘고시텔",
+              "isTerminal": false
+            },
+            {
+              "name": "하단역 1번출구 (다이소 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "명지새동네",
+              "isTerminal": false
+            },
+            {
+              "name": "명지지하차도 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "명지오션시티2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "르노삼성 남문",
+              "isTerminal": false
+            },
+            {
+              "name": "1번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "2번 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "22번 교차로 좌회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "23번 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "우드마트 앞 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "34번 교차로 좌회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "삼성전기 후문",
+              "isTerminal": false
+            },
+            {
+              "name": "35번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "36번 교차로 좌회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "동성중공업 앞 점멸등 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "G.S.M(주)앞 점멸등 교차로 좌회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "26번 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "리노공업 앞 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)젤텍 앞 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)다우정밀 앞 삼거리",
+              "isTerminal": false
+            },
+            {
+              "name": "28번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)바램",
+              "isTerminal": false
+            },
+            {
+              "name": "12번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "11번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "일광주공",
+              "isTerminal": false
+            },
+            {
+              "name": "광명잉크",
+              "isTerminal": false
+            },
+            {
+              "name": "10번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "경제진흥원",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "덕천",
+          "commute": {
+            "go": 830,
+            "return": 831
+          },
+          "timetable": [
+            {
+              "name": "덕천",
+              "am": [
+                "06:50"
+              ],
+              "pm": [
+                "19:25"
+              ]
+            },
+            {
+              "name": "강서구청",
+              "am": [],
+              "pm": [
+                "19:15"
+              ]
+            },
+            {
+              "name": "명지새동네",
+              "am": [],
+              "pm": [
+                "18:55"
+              ]
+            },
+            {
+              "name": "녹산산단",
+              "am": [
+                "07:55"
+              ],
+              "pm": [
+                "18:35"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "덕천역 5번출구 밑 주차장",
+              "isTerminal": true
+            },
+            {
+              "name": "구포역",
+              "isTerminal": false
+            },
+            {
+              "name": "강서구청",
+              "isTerminal": false
+            },
+            {
+              "name": "명지새동네",
+              "isTerminal": false
+            },
+            {
+              "name": "명지지하차도 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "명지오션시티2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "르노삼성 남문",
+              "isTerminal": false
+            },
+            {
+              "name": "1번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "5번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "6번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "7번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "8번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "9번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "10번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "광명잉크",
+              "isTerminal": false
+            },
+            {
+              "name": "일광주공",
+              "isTerminal": false
+            },
+            {
+              "name": "11번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "12번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)바램",
+              "isTerminal": false
+            },
+            {
+              "name": "28번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)다우정밀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)젤텍",
+              "isTerminal": false
+            },
+            {
+              "name": "27번 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "경제진흥원 맞은편 건널목",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "다대A",
+          "commute": {
+            "go": 834,
+            "return": 835
+          },
+          "timetable": [
+            {
+              "name": "다대1동 우체국",
+              "am": [
+                "06:39",
+                "06:50"
+              ],
+              "pm": [
+                "19:25",
+                "19:35"
+              ]
+            },
+            {
+              "name": "녹산산단",
+              "am": [
+                "07:14",
+                "07:30"
+              ],
+              "pm": [
+                "18:25",
+                "18:45"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "다대1동 우체국",
+              "isTerminal": true
+            },
+            {
+              "name": "농협",
+              "isTerminal": false
+            },
+            {
+              "name": "다대현대아파트",
+              "isTerminal": false
+            },
+            {
+              "name": "낫개역",
+              "isTerminal": false
+            },
+            {
+              "name": "다대고개",
+              "isTerminal": false
+            },
+            {
+              "name": "장림현대아파트",
+              "isTerminal": false
+            },
+            {
+              "name": "사하경찰서",
+              "isTerminal": false
+            },
+            {
+              "name": "신평놀이터",
+              "isTerminal": false
+            },
+            {
+              "name": "신평레포츠공원",
+              "isTerminal": false
+            },
+            {
+              "name": "명지지하차도 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "명지오션시티2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "르노삼성 남문",
+              "isTerminal": false
+            },
+            {
+              "name": "1번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "5번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "6번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "7번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "8번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "9번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "10번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "광명잉크",
+              "isTerminal": false
+            },
+            {
+              "name": "일광주공",
+              "isTerminal": false
+            },
+            {
+              "name": "11번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "12번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)바램",
+              "isTerminal": false
+            },
+            {
+              "name": "28번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)다우정밀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)젤텍",
+              "isTerminal": false
+            },
+            {
+              "name": "27번 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "경제진흥원 맞은편",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "다대B",
+          "commute": {
+            "go": 861,
+            "return": 862
+          },
+          "timetable": [
+            {
+              "name": "다대1동 우체국",
+              "am": [
+                "06:55"
+              ],
+              "pm": [
+                "20:35"
+              ]
+            },
+            {
+              "name": "녹산산단",
+              "am": [
+                "07:50"
+              ],
+              "pm": [
+                "19:15"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "다대1동 우체국",
+              "isTerminal": true
+            },
+            {
+              "name": "농협",
+              "isTerminal": false
+            },
+            {
+              "name": "다대현대아파트",
+              "isTerminal": false
+            },
+            {
+              "name": "낫개역",
+              "isTerminal": false
+            },
+            {
+              "name": "다대고개",
+              "isTerminal": false
+            },
+            {
+              "name": "장림현대아파트",
+              "isTerminal": false
+            },
+            {
+              "name": "사하경찰서",
+              "isTerminal": false
+            },
+            {
+              "name": "신평놀이터",
+              "isTerminal": false
+            },
+            {
+              "name": "신평레포츠공원",
+              "isTerminal": false
+            },
+            {
+              "name": "명지지하차도 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "명지오션시티2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2번 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-1번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-5번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-1번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "22번 교차로 좌회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "23번 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "34번 교차로 좌회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "삼성전기 후문",
+              "isTerminal": false
+            },
+            {
+              "name": "35번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "36번 교차로 좌회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "동성중공업 앞 점멸등 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "G.S.M(주)앞 점멸등 교차로 좌회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "26번 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "리노공업 앞 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)젤텍 앞 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)다우정밀 앞 삼거리",
+              "isTerminal": false
+            },
+            {
+              "name": "28번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)바램",
+              "isTerminal": false
+            },
+            {
+              "name": "12번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "11번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "일광공주",
+              "isTerminal": false
+            },
+            {
+              "name": "광명잉크",
+              "isTerminal": false
+            },
+            {
+              "name": "10번 신호등",
+              "isTerminal": false
+            },
+            {
+              "name": "경제진흥원",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hwajeon",
+      "name": "화전산단",
+      "zones": [
+        {
+          "name": "하단",
+          "commute": {
+            "go": 846,
+            "return": 847
+          },
+          "timetable": [
+            {
+              "name": "하단역",
+              "am": [
+                "06:45",
+                "06:55",
+                "07:05",
+                "07:15",
+                "07:25",
+                "07:35",
+                "07:45"
+              ],
+              "pm": [
+                "17:40",
+                "17:50",
+                "18:00",
+                "18:30",
+                "19:00",
+                "19:10",
+                "19:40"
+              ]
+            },
+            {
+              "name": "화전산단",
+              "am": [
+                "07:15",
+                "07:25",
+                "07:45",
+                "07:55",
+                "08:05",
+                "08:15",
+                "08:25"
+              ],
+              "pm": [
+                "17:00",
+                "17:10",
+                "17:20",
+                "17:40",
+                "18:00",
+                "18:30",
+                "19:00"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "하단역 1번출구 (뚜레쥬르 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "명지새동네",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2번 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-1번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-5번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-1번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전4번 교차로 건널목",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "사상",
+          "commute": {
+            "go": 843,
+            "return": 844
+          },
+          "timetable": [
+            {
+              "name": "사상터미널",
+              "am": [
+                "06:40"
+              ],
+              "pm": [
+                "19:30"
+              ]
+            },
+            {
+              "name": "하단역",
+              "am": [
+                "07:10"
+              ],
+              "pm": [
+                "19:00"
+              ]
+            },
+            {
+              "name": "화전산단",
+              "am": [
+                "07:50"
+              ],
+              "pm": [
+                "18:20"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "사상터미널 (아울렛 매장 앞 철골 주차장)",
+              "isTerminal": true
+            },
+            {
+              "name": "롯데마트",
+              "isTerminal": false
+            },
+            {
+              "name": "동아대 앞 대우에덴플라자",
+              "isTerminal": false
+            },
+            {
+              "name": "동아대 앞 한샘고시텔",
+              "isTerminal": false
+            },
+            {
+              "name": "하단역 1번출구 (뚜레쥬르 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "명지새동네",
+              "isTerminal": false
+            },
+            {
+              "name": "명지지하차도 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "명지오션시티2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2번 교차로 우회 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-1번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전2-5번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-4번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-2번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3-1번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전3번 교차로 건널목",
+              "isTerminal": false
+            },
+            {
+              "name": "화전4번 교차로 건널목",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gwahak",
+      "name": "과학산단",
+      "zones": [
+        {
+          "name": "하단",
+          "commute": {
+            "go": 876,
+            "return": 877
+          },
+          "timetable": [
+            {
+              "name": "하단역",
+              "am": [
+                "06:35",
+                "06:45",
+                "06:55",
+                "07:05",
+                "07:15",
+                "07:25",
+                "07:55"
+              ],
+              "pm": [
+                "17:50",
+                "18:00",
+                "18:20",
+                "18:40",
+                "19:10",
+                "19:35",
+                "21:00"
+              ]
+            },
+            {
+              "name": "과학산단",
+              "am": [
+                "07:25",
+                "07:35",
+                "07:45",
+                "07:55",
+                "08:05",
+                "08:15",
+                "08:45"
+              ],
+              "pm": [
+                "17:10",
+                "17:20",
+                "17:40",
+                "18:00",
+                "18:30",
+                "18:55",
+                "20:20"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "하단역 1번출구 (레이어스호텔 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "명지 이타일",
+              "isTerminal": false
+            },
+            {
+              "name": "대림메탈",
+              "isTerminal": false
+            },
+            {
+              "name": "국제물류(주)엔써",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)신안",
+              "isTerminal": false
+            },
+            {
+              "name": "한국메틱스(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "하나은행",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)엔케이",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)동화엔텍",
+              "isTerminal": false
+            },
+            {
+              "name": "이원솔루텍",
+              "isTerminal": false
+            },
+            {
+              "name": "자동차부품멀티관",
+              "isTerminal": false
+            },
+            {
+              "name": "아쿠아셀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)이엔케이 정문",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)피에스지",
+              "isTerminal": false
+            },
+            {
+              "name": "쌍용전력(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)KJF",
+              "isTerminal": false
+            },
+            {
+              "name": "삼영엠티(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "태진금속열처리",
+              "isTerminal": false
+            },
+            {
+              "name": "부원기계공업",
+              "isTerminal": false
+            },
+            {
+              "name": "대동스프링",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)성우하이텍",
+              "isTerminal": false
+            },
+            {
+              "name": "테크노파크",
+              "isTerminal": false
+            },
+            {
+              "name": "동남유공업(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "신신중공업(주)",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "사상",
+          "commute": {
+            "go": 874,
+            "return": 875
+          },
+          "timetable": [
+            {
+              "name": "사상터미널",
+              "am": [
+                "06:50"
+              ],
+              "pm": [
+                "19:30"
+              ]
+            },
+            {
+              "name": "하단역",
+              "am": [
+                "07:10"
+              ],
+              "pm": [
+                "18:55"
+              ]
+            },
+            {
+              "name": "과학산단",
+              "am": [
+                "07:50"
+              ],
+              "pm": [
+                "18:15"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "사상터미널 (아울렛 매장 앞 철골 주차장)",
+              "isTerminal": true
+            },
+            {
+              "name": "롯데마트",
+              "isTerminal": false
+            },
+            {
+              "name": "동아대 앞 대우에덴플라자",
+              "isTerminal": false
+            },
+            {
+              "name": "동아대 앞 한샘고시텔",
+              "isTerminal": false
+            },
+            {
+              "name": "하단역 1번출구 (레이어스호텔 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "명지 이타일",
+              "isTerminal": false
+            },
+            {
+              "name": "대림메탈",
+              "isTerminal": false
+            },
+            {
+              "name": "국제물류(주)엔써",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)신안",
+              "isTerminal": false
+            },
+            {
+              "name": "한국메틱스(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "하나은행",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)엔케이",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)동화엔텍",
+              "isTerminal": false
+            },
+            {
+              "name": "이원솔루텍",
+              "isTerminal": false
+            },
+            {
+              "name": "자동차부품멀티관",
+              "isTerminal": false
+            },
+            {
+              "name": "아쿠아셀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)이엔케이 정문",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)피에스지",
+              "isTerminal": false
+            },
+            {
+              "name": "쌍용전력(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)KJF",
+              "isTerminal": false
+            },
+            {
+              "name": "삼영엠티(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "태진금속열처리",
+              "isTerminal": false
+            },
+            {
+              "name": "부원기계공업",
+              "isTerminal": false
+            },
+            {
+              "name": "대동스프링",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)성우하이텍",
+              "isTerminal": false
+            },
+            {
+              "name": "테크노파크",
+              "isTerminal": false
+            },
+            {
+              "name": "동남유공업(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "신신중공업(주)",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mieum",
+      "name": "미음산단",
+      "zones": [
+        {
+          "name": "미음B",
+          "commute": {
+            "go": 871,
+            "return": 873
+          },
+          "timetable": [
+            {
+              "name": "하단역",
+              "am": [
+                "06:45",
+                "07:00",
+                "07:15",
+                "07:30",
+                "07:45"
+              ],
+              "pm": [
+                "18:10",
+                "18:30",
+                "19:00",
+                "19:45",
+                "21:00"
+              ]
+            },
+            {
+              "name": "미음산단",
+              "am": [
+                "07:45",
+                "08:00",
+                "08:15",
+                "08:30",
+                "08:45"
+              ],
+              "pm": [
+                "17:10",
+                "17:30",
+                "18:00",
+                "18:45",
+                "20:00"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "하단역 1번출구",
+              "isTerminal": true
+            },
+            {
+              "name": "명지 이타일",
+              "isTerminal": false
+            },
+            {
+              "name": "우성전기 맞은편",
+              "isTerminal": false
+            },
+            {
+              "name": "조선기자재협동조합 공동식당",
+              "isTerminal": false
+            },
+            {
+              "name": "태광ENG",
+              "isTerminal": false
+            },
+            {
+              "name": "부국철강",
+              "isTerminal": false
+            },
+            {
+              "name": "부산글로벌테크비즈센터",
+              "isTerminal": false
+            },
+            {
+              "name": "한국생산성기술연구원",
+              "isTerminal": false
+            },
+            {
+              "name": "유니온텍",
+              "isTerminal": false
+            },
+            {
+              "name": "신일에스앤피",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)메탈텍",
+              "isTerminal": false
+            },
+            {
+              "name": "화성금속",
+              "isTerminal": false
+            },
+            {
+              "name": "DJF",
+              "isTerminal": false
+            },
+            {
+              "name": "이명기계",
+              "isTerminal": false
+            },
+            {
+              "name": "파나시아(국제금속)",
+              "isTerminal": false
+            },
+            {
+              "name": "우성전기",
+              "isTerminal": false
+            },
+            {
+              "name": "우성전기",
+              "isTerminal": false
+            },
+            {
+              "name": "파나시아(국제금속)",
+              "isTerminal": false
+            },
+            {
+              "name": "이명기계",
+              "isTerminal": false
+            },
+            {
+              "name": "DJF",
+              "isTerminal": false
+            },
+            {
+              "name": "화성금속",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)메탈텍",
+              "isTerminal": false
+            },
+            {
+              "name": "신일에스앤피",
+              "isTerminal": false
+            },
+            {
+              "name": "유니온텍",
+              "isTerminal": false
+            },
+            {
+              "name": "한국생산성기술연구원",
+              "isTerminal": false
+            },
+            {
+              "name": "부산글로벌테크비즈센터",
+              "isTerminal": false
+            },
+            {
+              "name": "부국철강",
+              "isTerminal": false
+            },
+            {
+              "name": "태광ENG",
+              "isTerminal": false
+            },
+            {
+              "name": "조선기자재협동조합 공동식당",
+              "isTerminal": false
+            },
+            {
+              "name": "우성전기 맞은편",
+              "isTerminal": false
+            },
+            {
+              "name": "한국메틱스(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "성진스틸",
+              "isTerminal": false
+            },
+            {
+              "name": "대성프라임",
+              "isTerminal": false
+            },
+            {
+              "name": "풍력발전",
+              "isTerminal": false
+            },
+            {
+              "name": "화진기업",
+              "isTerminal": false
+            },
+            {
+              "name": "삼우엠씨피",
+              "isTerminal": false
+            },
+            {
+              "name": "보쉬렉스코리아",
+              "isTerminal": false
+            },
+            {
+              "name": "하마이코리아",
+              "isTerminal": false
+            },
+            {
+              "name": "신우",
+              "isTerminal": false
+            },
+            {
+              "name": "디케이씨",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "대저역",
+          "commute": {
+            "go": 869,
+            "return": 870
+          },
+          "timetable": [
+            {
+              "name": "대저역",
+              "am": [
+                "07:00"
+              ],
+              "pm": [
+                "19:10"
+              ]
+            },
+            {
+              "name": "미음산단",
+              "am": [
+                "08:00"
+              ],
+              "pm": [
+                "18:10"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "대저역",
+              "isTerminal": true
+            },
+            {
+              "name": "조선기자재협동조합 공동식당",
+              "isTerminal": false
+            },
+            {
+              "name": "태광ENG",
+              "isTerminal": false
+            },
+            {
+              "name": "부국철강",
+              "isTerminal": false
+            },
+            {
+              "name": "부산글로벌테크비즈센터",
+              "isTerminal": false
+            },
+            {
+              "name": "한국생산성기술연구원",
+              "isTerminal": false
+            },
+            {
+              "name": "유니온텍",
+              "isTerminal": false
+            },
+            {
+              "name": "신일에스앤피",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)메탈텍",
+              "isTerminal": false
+            },
+            {
+              "name": "화성금속",
+              "isTerminal": false
+            },
+            {
+              "name": "DJF",
+              "isTerminal": false
+            },
+            {
+              "name": "이명기계",
+              "isTerminal": false
+            },
+            {
+              "name": "파나시아(국제금속)",
+              "isTerminal": false
+            },
+            {
+              "name": "우성전기",
+              "isTerminal": false
+            },
+            {
+              "name": "우성전기",
+              "isTerminal": false
+            },
+            {
+              "name": "파나시아(국제금속)",
+              "isTerminal": false
+            },
+            {
+              "name": "이명기계",
+              "isTerminal": false
+            },
+            {
+              "name": "DJF",
+              "isTerminal": false
+            },
+            {
+              "name": "화성금속",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)메탈텍",
+              "isTerminal": false
+            },
+            {
+              "name": "신일에스앤피",
+              "isTerminal": false
+            },
+            {
+              "name": "유니온텍",
+              "isTerminal": false
+            },
+            {
+              "name": "한국생산성기술연구원",
+              "isTerminal": false
+            },
+            {
+              "name": "부산글로벌테크비즈센터",
+              "isTerminal": false
+            },
+            {
+              "name": "부국철강",
+              "isTerminal": false
+            },
+            {
+              "name": "태광ENG",
+              "isTerminal": false
+            },
+            {
+              "name": "조선기자재협동조합 공동식당",
+              "isTerminal": false
+            },
+            {
+              "name": "우성전기 맞은편",
+              "isTerminal": false
+            },
+            {
+              "name": "한국메틱스(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "성진스틸",
+              "isTerminal": false
+            },
+            {
+              "name": "대성프라임",
+              "isTerminal": false
+            },
+            {
+              "name": "풍력발전",
+              "isTerminal": false
+            },
+            {
+              "name": "화진기업",
+              "isTerminal": false
+            },
+            {
+              "name": "삼우엠씨피",
+              "isTerminal": false
+            },
+            {
+              "name": "보쉬렉스코리아",
+              "isTerminal": false
+            },
+            {
+              "name": "하마이코리아",
+              "isTerminal": false
+            },
+            {
+              "name": "신우",
+              "isTerminal": false
+            },
+            {
+              "name": "디케이씨",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intlogistics",
+      "name": "국제물류",
+      "zones": [
+        {
+          "name": "하단A",
+          "commute": {
+            "go": 855,
+            "return": 856
+          },
+          "timetable": [
+            {
+              "name": "하단역",
+              "am": [
+                "06:50",
+                "07:10",
+                "07:25"
+              ],
+              "pm": [
+                "17:50",
+                "18:10",
+                "18:50"
+              ]
+            },
+            {
+              "name": "국제물류",
+              "am": [
+                "07:20",
+                "07:40",
+                "07:55"
+              ],
+              "pm": [
+                "17:10",
+                "17:30",
+                "18:10"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "하단역 1번출구 (레이어스호텔 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "(주)유민",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)대양볼트",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)코렌스EM",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)자이언엔텍",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)기하정밀",
+              "isTerminal": false
+            },
+            {
+              "name": "유송주유소",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "하단B",
+          "commute": {
+            "go": 857,
+            "return": 858
+          },
+          "timetable": [
+            {
+              "name": "하단역",
+              "am": [
+                "06:55",
+                "07:15",
+                "07:30"
+              ],
+              "pm": [
+                "18:10",
+                "18:30",
+                "19:10"
+              ]
+            },
+            {
+              "name": "국제물류",
+              "am": [
+                "07:55",
+                "08:05",
+                "08:20"
+              ],
+              "pm": [
+                "17:10",
+                "17:30",
+                "18:10"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "하단역 1번출구 (레이어스호텔 앞)",
+              "isTerminal": true
+            },
+            {
+              "name": "신한스틸",
+              "isTerminal": false
+            },
+            {
+              "name": "성림중전기",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)태성비철",
+              "isTerminal": false
+            },
+            {
+              "name": "E마트 편의점",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)피엔에스더죤샤시",
+              "isTerminal": false
+            },
+            {
+              "name": "신한산업사",
+              "isTerminal": false
+            },
+            {
+              "name": "그린창호공업(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "심우계전",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)대성메탈",
+              "isTerminal": false
+            },
+            {
+              "name": "건영화물",
+              "isTerminal": false
+            },
+            {
+              "name": "케이타공",
+              "isTerminal": false
+            },
+            {
+              "name": "부주금속",
+              "isTerminal": false
+            },
+            {
+              "name": "YESRV캠핑카",
+              "isTerminal": false
+            },
+            {
+              "name": "오토텍",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sinpyeong",
+      "name": "신평장림",
+      "zones": [
+        {
+          "name": "신평",
+          "commute": {
+            "go": 848,
+            "return": 849
+          },
+          "timetable": [
+            {
+              "name": "신평역",
+              "am": [
+                "07:03",
+                "07:13",
+                "07:27",
+                "07:47",
+                "07:57",
+                "08:08"
+              ],
+              "pm": []
+            },
+            {
+              "name": "명보기업",
+              "am": [
+                "07:20",
+                "07:30",
+                "07:40",
+                "08:00",
+                "08:10",
+                "08:20"
+              ],
+              "pm": [
+                "17:00",
+                "17:30",
+                "18:00",
+                "18:20",
+                "18:50",
+                "19:10"
+              ]
+            },
+            {
+              "name": "다대우체국",
+              "am": [],
+              "pm": []
+            }
+          ],
+          "stations": [
+            {
+              "name": "신평역 1번출구 건너편",
+              "isTerminal": true
+            },
+            {
+              "name": "장림 도시가스 삼거리",
+              "isTerminal": false
+            },
+            {
+              "name": "7번 신호등 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)보림",
+              "isTerminal": false
+            },
+            {
+              "name": "미광사",
+              "isTerminal": false
+            },
+            {
+              "name": "경부산업",
+              "isTerminal": false
+            },
+            {
+              "name": "8번 신호등 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "9번 신호등 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "선보공업",
+              "isTerminal": false
+            },
+            {
+              "name": "명보기업",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "다대우체국",
+          "commute": {
+            "go": 850,
+            "return": null
+          },
+          "timetable": [
+            {
+              "name": "다대우체국",
+              "am": [
+                "07:25",
+                "07:35",
+                "07:45"
+              ],
+              "pm": []
+            },
+            {
+              "name": "명보기업",
+              "am": [
+                "07:30",
+                "07:40",
+                "07:50"
+              ],
+              "pm": []
+            },
+            {
+              "name": "신평역",
+              "am": [
+                "07:47",
+                "07:57",
+                "08:08"
+              ],
+              "pm": []
+            },
+            {
+              "name": "-",
+              "am": [],
+              "pm": [
+                ""
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "다대1동 우체국",
+              "isTerminal": true
+            },
+            {
+              "name": "명보기업",
+              "isTerminal": true
+            },
+            {
+              "name": "선보공업",
+              "isTerminal": false
+            },
+            {
+              "name": "9번 신호등 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "8번 신호등 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "경부산업",
+              "isTerminal": false
+            },
+            {
+              "name": "미광사",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)보림",
+              "isTerminal": false
+            },
+            {
+              "name": "7번 신호등 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "장림 도시가스 삼거리",
+              "isTerminal": false
+            },
+            {
+              "name": "신평역 1번출구 건너편",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gamcheon",
+      "name": "감천수산물",
+      "zones": [
+        {
+          "name": "암남",
+          "commute": {
+            "go": 836,
+            "return": 837
+          },
+          "timetable": [
+            {
+              "name": "하단역",
+              "am": [
+                "06:50"
+              ],
+              "pm": [
+                "18:45"
+              ]
+            },
+            {
+              "name": "감천사거리",
+              "am": [
+                "07:15"
+              ],
+              "pm": [
+                "18:22"
+              ]
+            },
+            {
+              "name": "선진화단지",
+              "am": [
+                "07:25"
+              ],
+              "pm": [
+                "18:10"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "하단역 2번출구",
+              "isTerminal": true
+            },
+            {
+              "name": "사하구청",
+              "isTerminal": false
+            },
+            {
+              "name": "사하역",
+              "isTerminal": false
+            },
+            {
+              "name": "괴정역",
+              "isTerminal": false
+            },
+            {
+              "name": "감천사거리 (백산아파트)",
+              "isTerminal": true
+            },
+            {
+              "name": "감천사거리 119 안전센터",
+              "isTerminal": false
+            },
+            {
+              "name": "선진화단지",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gupyeong",
+      "name": "구평공단",
+      "zones": [
+        {
+          "name": "구평",
+          "commute": {
+            "go": 839,
+            "return": null
+          },
+          "timetable": [
+            {
+              "name": "대티역",
+              "am": [
+                "07:05"
+              ],
+              "pm": []
+            },
+            {
+              "name": "구평공단",
+              "am": [
+                "07:30"
+              ],
+              "pm": []
+            },
+            {
+              "name": "-",
+              "am": [],
+              "pm": [
+                ""
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "대티역",
+              "isTerminal": true
+            },
+            {
+              "name": "괴정역",
+              "isTerminal": false
+            },
+            {
+              "name": "감천삼거리",
+              "isTerminal": false
+            },
+            {
+              "name": "구평고개",
+              "isTerminal": false
+            },
+            {
+              "name": "YK스틸",
+              "isTerminal": false
+            },
+            {
+              "name": "구평동 주민회관 입구",
+              "isTerminal": false
+            },
+            {
+              "name": "구평방파제",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jeonggwan",
+      "name": "정관산단",
+      "zones": [
+        {
+          "name": "반여농산물",
+          "commute": {
+            "go": 840,
+            "return": 841
+          },
+          "timetable": [
+            {
+              "name": "반여농산물시장",
+              "am": [
+                "07:25"
+              ],
+              "pm": [
+                "18:20"
+              ]
+            },
+            {
+              "name": "정관산단",
+              "am": [
+                "08:05"
+              ],
+              "pm": [
+                "17:30"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "반여농산물시장역",
+              "isTerminal": true
+            },
+            {
+              "name": "기업은행",
+              "isTerminal": false
+            },
+            {
+              "name": "유성산업",
+              "isTerminal": false
+            },
+            {
+              "name": "삼성강건사 입구",
+              "isTerminal": false
+            },
+            {
+              "name": "삼원산업 입구",
+              "isTerminal": false
+            },
+            {
+              "name": "대한화성",
+              "isTerminal": false
+            },
+            {
+              "name": "미송목재 입구",
+              "isTerminal": false
+            },
+            {
+              "name": "위니코니(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "농공단지 입구",
+              "isTerminal": false
+            },
+            {
+              "name": "농공단지 계량소",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jangan",
+      "name": "장안산단",
+      "zones": [
+        {
+          "name": "장안",
+          "commute": {
+            "go": 1166,
+            "return": 1167
+          },
+          "timetable": [
+            {
+              "name": "반여농산물시장",
+              "am": [
+                "07:10"
+              ],
+              "pm": [
+                "19:10"
+              ]
+            },
+            {
+              "name": "기장중",
+              "am": [
+                "07:30"
+              ],
+              "pm": [
+                "18:45"
+              ]
+            },
+            {
+              "name": "장안산단",
+              "am": [
+                "08:30"
+              ],
+              "pm": [
+                "18:10"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "반여농산물역 2번출구 맞은편 반여꽃농원",
+              "isTerminal": true
+            },
+            {
+              "name": "석대역",
+              "isTerminal": false
+            },
+            {
+              "name": "영산대역",
+              "isTerminal": false
+            },
+            {
+              "name": "동부산대역",
+              "isTerminal": false
+            },
+            {
+              "name": "고촌역",
+              "isTerminal": false
+            },
+            {
+              "name": "안평역",
+              "isTerminal": false
+            },
+            {
+              "name": "이진테마빌",
+              "isTerminal": false
+            },
+            {
+              "name": "청진동해장국",
+              "isTerminal": false
+            },
+            {
+              "name": "한신아파트",
+              "isTerminal": false
+            },
+            {
+              "name": "기장중학교",
+              "isTerminal": true
+            },
+            {
+              "name": "원자력병원 입구",
+              "isTerminal": false
+            },
+            {
+              "name": "퓨쳐캠 (의과학)",
+              "isTerminal": false
+            },
+            {
+              "name": "의과학2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "이성씨엔아이 (의과학)",
+              "isTerminal": false
+            },
+            {
+              "name": "효성전기",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)광성계측기",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)우정티알비",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)성우하이텍",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)세동",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)신원미크론",
+              "isTerminal": false
+            },
+            {
+              "name": "아산이노텍",
+              "isTerminal": false
+            },
+            {
+              "name": "관문산업",
+              "isTerminal": false
+            },
+            {
+              "name": "한라정공",
+              "isTerminal": false
+            },
+            {
+              "name": "그린컨기술",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "동해선",
+          "commute": {
+            "go": 1168,
+            "return": 1169
+          },
+          "timetable": [
+            {
+              "name": "동해선 좌천역",
+              "am": [
+                "07:00",
+                "07:20",
+                "07:40",
+                "08:00"
+              ],
+              "pm": [
+                "17:40",
+                "18:00",
+                "18:20",
+                "18:40"
+              ]
+            },
+            {
+              "name": "장안산단",
+              "am": [
+                "07:15",
+                "07:35",
+                "07:55",
+                "08:15"
+              ],
+              "pm": [
+                "17:25",
+                "17:45",
+                "18:05",
+                "18:25"
+              ]
+            },
+            {
+              "name": "반룡산단",
+              "am": [
+                "07:30",
+                "07:50",
+                "08:10",
+                "08:30"
+              ],
+              "pm": [
+                "17:10",
+                "17:30",
+                "17:50",
+                "18:10"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "동해선 좌천역 구역사",
+              "isTerminal": true
+            },
+            {
+              "name": "퓨쳐캠 (의과학)",
+              "isTerminal": false
+            },
+            {
+              "name": "의과학2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "이성씨엔아이 (의과학)",
+              "isTerminal": false
+            },
+            {
+              "name": "효성전기",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)광성계측기",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)우정티알비",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)성우하이텍",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)세동",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)신원미크론",
+              "isTerminal": false
+            },
+            {
+              "name": "아산이노텍",
+              "isTerminal": false
+            },
+            {
+              "name": "관문산업",
+              "isTerminal": false
+            },
+            {
+              "name": "한라정공",
+              "isTerminal": false
+            },
+            {
+              "name": "그린컨기술",
+              "isTerminal": true
+            },
+            {
+              "name": "한국해양바이오클러스터(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "창성정공",
+              "isTerminal": false
+            },
+            {
+              "name": "CJ대한통운",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)빈코넷 앞 삼거리",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "정관신도시",
+          "commute": {
+            "go": 1170,
+            "return": 1171
+          },
+          "timetable": [
+            {
+              "name": "정관신도시",
+              "am": [
+                "07:10"
+              ],
+              "pm": [
+                "19:00"
+              ]
+            },
+            {
+              "name": "장안산단",
+              "am": [
+                "07:30"
+              ],
+              "pm": [
+                "17:30"
+              ]
+            },
+            {
+              "name": "반룡산단",
+              "am": [
+                "07:50"
+              ],
+              "pm": [
+                "17:10"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "모전중 맞은편 어린이집",
+              "isTerminal": true
+            },
+            {
+              "name": "정관휴먼시아 201동 앞 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "신정초 앞 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "더마트",
+              "isTerminal": false
+            },
+            {
+              "name": "신한은행 정관금융센터",
+              "isTerminal": false
+            },
+            {
+              "name": "농협 정관지점",
+              "isTerminal": false
+            },
+            {
+              "name": "정관박물관",
+              "isTerminal": false
+            },
+            {
+              "name": "퓨쳐캠 (의과학)",
+              "isTerminal": false
+            },
+            {
+              "name": "의과학2로 사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "이성씨엔아이 (의과학)",
+              "isTerminal": false
+            },
+            {
+              "name": "효성전기",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)광성계측기",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)우정티알비",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)성우하이텍",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)세동",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)신원미크론",
+              "isTerminal": false
+            },
+            {
+              "name": "아산이노텍",
+              "isTerminal": false
+            },
+            {
+              "name": "관문산업",
+              "isTerminal": false
+            },
+            {
+              "name": "한라정공",
+              "isTerminal": false
+            },
+            {
+              "name": "그린컨기술",
+              "isTerminal": true
+            },
+            {
+              "name": "한국해양바이오클러스터(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "창성정공",
+              "isTerminal": false
+            },
+            {
+              "name": "CJ대한통운",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)빈코넷 앞 삼거리",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "myoungrye",
+      "name": "명례산단",
+      "zones": [
+        {
+          "name": "명례",
+          "commute": {
+            "go": 853,
+            "return": 854
+          },
+          "timetable": [
+            {
+              "name": "장산역",
+              "am": [
+                "07:10"
+              ],
+              "pm": [
+                "19:30"
+              ]
+            },
+            {
+              "name": "명례산단",
+              "am": [
+                "08:10"
+              ],
+              "pm": [
+                "18:30"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "경동아파트 입구 (장산역 1번출구)",
+              "isTerminal": true
+            },
+            {
+              "name": "송정입구 버스정류장",
+              "isTerminal": false
+            },
+            {
+              "name": "내리휴먼시아 건너편",
+              "isTerminal": false
+            },
+            {
+              "name": "청강시내버스차고지",
+              "isTerminal": false
+            },
+            {
+              "name": "청강사거리",
+              "isTerminal": false
+            },
+            {
+              "name": "기장시장 (수협 앞)",
+              "isTerminal": false
+            },
+            {
+              "name": "교리사거리 물좋은온천 앞",
+              "isTerminal": false
+            },
+            {
+              "name": "일광역 앞",
+              "isTerminal": false
+            },
+            {
+              "name": "원자력병원 입구",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)광성계측기",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)신원미크론",
+              "isTerminal": false
+            },
+            {
+              "name": "신성전기(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "동연스틸(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)베이비또",
+              "isTerminal": false
+            },
+            {
+              "name": "강림인슈(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)현대피팅",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)대현정밀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)승림특수금속",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "동해선",
+          "commute": {
+            "go": 1174,
+            "return": 1175
+          },
+          "timetable": [
+            {
+              "name": "동해선 좌천역",
+              "am": [
+                "07:00",
+                "07:40"
+              ],
+              "pm": [
+                "17:40",
+                "18:20"
+              ]
+            },
+            {
+              "name": "명례산단",
+              "am": [
+                "07:20",
+                "08:00"
+              ],
+              "pm": [
+                "17:20",
+                "18:00"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "동해선 좌천역 구역사",
+              "isTerminal": true
+            },
+            {
+              "name": "동연스틸(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)베이비또",
+              "isTerminal": false
+            },
+            {
+              "name": "강림인슈(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)현대피팅",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)대현정밀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)승림특수금속",
+              "isTerminal": true
+            }
+          ]
+        },
+        {
+          "name": "정관신도시",
+          "commute": {
+            "go": 1176,
+            "return": 1177
+          },
+          "timetable": [
+            {
+              "name": "정관신도시",
+              "am": [
+                "07:25"
+              ],
+              "pm": [
+                "19:10"
+              ]
+            },
+            {
+              "name": "명례산단",
+              "am": [
+                "08:25"
+              ],
+              "pm": [
+                "18:10"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "GS25 정관행복점",
+              "isTerminal": true
+            },
+            {
+              "name": "감성커피 앞",
+              "isTerminal": false
+            },
+            {
+              "name": "정관휴먼시아 201동 앞 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "신정초 앞 교차로",
+              "isTerminal": false
+            },
+            {
+              "name": "더마트",
+              "isTerminal": false
+            },
+            {
+              "name": "신한은행 정관금융센터",
+              "isTerminal": false
+            },
+            {
+              "name": "농협 정관지점",
+              "isTerminal": false
+            },
+            {
+              "name": "정관박물관",
+              "isTerminal": false
+            },
+            {
+              "name": "동연스틸(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)베이비또",
+              "isTerminal": false
+            },
+            {
+              "name": "강림인슈(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)현대피팅",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)대현정밀",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)승림특수금속",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ori",
+      "name": "오리산단",
+      "zones": [
+        {
+          "name": "동해선",
+          "commute": {
+            "go": 1163,
+            "return": 1164
+          },
+          "timetable": [
+            {
+              "name": "동해선 좌천역",
+              "am": [
+                "07:00",
+                "07:40"
+              ],
+              "pm": [
+                "17:40",
+                "18:20"
+              ]
+            },
+            {
+              "name": "오리산단",
+              "am": [
+                "07:20",
+                "08:00"
+              ],
+              "pm": [
+                "17:20",
+                "18:00"
+              ]
+            }
+          ],
+          "stations": [
+            {
+              "name": "동해선 좌천역 구역사",
+              "isTerminal": true
+            },
+            {
+              "name": "에코장안산업단지 입구",
+              "isTerminal": false
+            },
+            {
+              "name": "우성단열산업",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)이삭에프앤비",
+              "isTerminal": false
+            },
+            {
+              "name": "푸드어셈블",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)제이엠커피컴퍼니",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)태진엔지니어링",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)알에이아이엔티",
+              "isTerminal": false
+            },
+            {
+              "name": "(주)케이씨엔티",
+              "isTerminal": false
+            },
+            {
+              "name": "KMCP(주)",
+              "isTerminal": false
+            },
+            {
+              "name": "고려디자인(주)",
+              "isTerminal": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
