@@ -123,6 +123,57 @@ button { font-family: inherit; }
   overflow: hidden;
 }
 
+/* ===== 전체 관제 버튼 ===== */
+.all-routes-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 16px 0;
+  padding: 12px 14px;
+  background: linear-gradient(135deg, var(--brand-pink), var(--brand-pink-dark));
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.25);
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+}
+
+.all-routes-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(236, 72, 153, 0.35);
+  filter: brightness(1.04);
+}
+
+.all-routes-btn[aria-pressed="true"] {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--brand-pink-dark);
+}
+
+.all-emoji {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.all-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  min-width: 0;
+}
+
+.all-text strong {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.all-text small {
+  font-size: 11px;
+  opacity: 0.9;
+  margin-top: 2px;
+}
+
 .search-box {
   padding: 14px 16px 10px;
   border-bottom: 1px solid var(--border);
