@@ -10,6 +10,8 @@
     search: $('#search'),
     breadcrumb: $('#breadcrumb'),
     mapFrame: $('#mapFrame'),
+    mapFrameWrap: $('#mapFrameWrap'),
+    gridPanel: $('#gridPanel'),
     sidebar: $('#sidebar'),
     tplComplex: $('#tplComplex'),
     tplZone: $('#tplZone'),
@@ -102,8 +104,10 @@
 
     state.selected = { complexId, zoneName, direction, routeId, complexName: complex.name };
 
-    // 전체 관제 버튼 해제
+    // 전체 관제 버튼 해제 + 그리드 숨김
     els.allRoutesBtn.setAttribute('aria-pressed', 'false');
+    els.gridPanel.hidden = true;
+    els.mapFrameWrap.hidden = false;
 
     // 활성 leaf 표시
     $$('.leaf', els.tree).forEach(b => b.classList.remove('active'));
@@ -150,29 +154,77 @@
     return `${state.data.mapBaseUrl || 'https://rideus.net/busansandan/shuttlebus/'}${routeId}/map`;
   }
 
-  function allMapUrl() {
-    return `${state.data.mapBaseUrl || 'https://rideus.net/busansandan/shuttlebus/'}all/map`;
-  }
-
-  /* ---------- 전체 관제 보기 ---------- */
+  /* ---------- 전체 관제 보기 (26개 노선 그리드) ---------- */
   function selectAll() {
     state.selected = { all: true };
     // 트리 leaf 활성 해제
     $$('.leaf', els.tree).forEach(b => b.classList.remove('active'));
     // 전체 버튼 pressed
     els.allRoutesBtn.setAttribute('aria-pressed', 'true');
+    // 단일 iframe 숨기고 그리드 보이기
+    els.mapFrameWrap.hidden = true;
+    els.gridPanel.hidden = false;
+    els.mapFrame.src = 'about:blank'; // WebSocket 연결 해제 (자원 절약)
+    if (els.mapOpenLink) els.mapOpenLink.hidden = true;
+    // 첫 진입 시에만 그리드 렌더
+    if (!els.gridPanel.children.length) renderGrid();
     // breadcrumb
-    els.breadcrumb.innerHTML = '<span class="bc-item bc-final">🌐 전체 관제</span>';
-    // map open link
-    const url = allMapUrl();
-    if (els.mapOpenLink) {
-      els.mapOpenLink.href = url;
-      els.mapOpenLink.hidden = false;
-    }
-    els.mapFrame.src = url;
+    const totalCards = els.gridPanel.children.length;
+    els.breadcrumb.innerHTML = `<span class="bc-item bc-final">🌐 전체 관제 (${totalCards}개 노선)</span>`;
     // hash + localStorage
     history.replaceState(null, '', '#all');
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ all: true })); } catch (e) {}
+  }
+
+  function renderGrid() {
+    const frag = document.createDocumentFragment();
+    for (const complex of state.data.complexes) {
+      const complexShort = complex.name.replace(/산단$/, '').replace(/공단$/, '').replace(/수산물$/, '수산물');
+      for (const zone of complex.zones) {
+        for (const dir of ['go', 'return']) {
+          const routeId = zone.commute[dir];
+          if (routeId == null) continue;
+          const url = mapUrl(routeId);
+          const dirLabel = DIR_LABEL[dir];
+
+          const card = document.createElement('div');
+          card.className = 'grid-card';
+
+          const head = document.createElement('div');
+          head.className = 'grid-card-head';
+          const title = document.createElement('span');
+          title.className = 'grid-card-title';
+          title.title = `${complex.name} · ${zone.name} · ${dirLabel}`;
+          title.textContent = `${complexShort} · ${zone.name}`;
+          const dirChip = document.createElement('span');
+          dirChip.className = `grid-card-dir ${dir}`;
+          dirChip.textContent = dirLabel;
+          const open = document.createElement('a');
+          open.className = 'grid-card-open';
+          open.href = url;
+          open.target = '_blank';
+          open.rel = 'noopener';
+          open.title = '새 창에서 열기';
+          open.setAttribute('aria-label', '새 창에서 열기');
+          open.textContent = '↗';
+          head.append(title, dirChip, open);
+
+          const frameWrap = document.createElement('div');
+          frameWrap.className = 'grid-card-frame';
+          const iframe = document.createElement('iframe');
+          iframe.src = url;
+          iframe.loading = 'lazy';
+          iframe.referrerPolicy = 'no-referrer-when-downgrade';
+          iframe.allow = 'geolocation';
+          iframe.title = `${complex.name} ${zone.name} ${dirLabel}`;
+          frameWrap.appendChild(iframe);
+
+          card.append(head, frameWrap);
+          frag.appendChild(card);
+        }
+      }
+    }
+    els.gridPanel.appendChild(frag);
   }
 
   function updateMap(routeId) {
