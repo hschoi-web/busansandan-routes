@@ -10,14 +10,11 @@
     search: $('#search'),
     breadcrumb: $('#breadcrumb'),
     mapFrame: $('#mapFrame'),
-    mapFrameWrap: $('#mapFrameWrap'),
-    gridPanel: $('#gridPanel'),
     sidebar: $('#sidebar'),
     tplComplex: $('#tplComplex'),
     tplZone: $('#tplZone'),
     mapOpenLink: $('#mapOpenLink'),
-    brandHome: $('#brandHome'),
-    allRoutesBtn: $('#allRoutesBtn')
+    brandHome: $('#brandHome')
   };
 
   const state = {
@@ -104,11 +101,6 @@
 
     state.selected = { complexId, zoneName, direction, routeId, complexName: complex.name };
 
-    // 전체 관제 버튼 해제 + 그리드 숨김
-    els.allRoutesBtn.setAttribute('aria-pressed', 'false');
-    els.gridPanel.hidden = true;
-    els.mapFrameWrap.hidden = false;
-
     // 활성 leaf 표시
     $$('.leaf', els.tree).forEach(b => b.classList.remove('active'));
     const leaf = els.tree.querySelector(
@@ -154,79 +146,6 @@
     return `${state.data.mapBaseUrl || 'https://rideus.net/busansandan/shuttlebus/'}${routeId}/map`;
   }
 
-  /* ---------- 전체 관제 보기 (26개 노선 그리드) ---------- */
-  function selectAll() {
-    state.selected = { all: true };
-    // 트리 leaf 활성 해제
-    $$('.leaf', els.tree).forEach(b => b.classList.remove('active'));
-    // 전체 버튼 pressed
-    els.allRoutesBtn.setAttribute('aria-pressed', 'true');
-    // 단일 iframe 숨기고 그리드 보이기
-    els.mapFrameWrap.hidden = true;
-    els.gridPanel.hidden = false;
-    els.mapFrame.src = 'about:blank'; // WebSocket 연결 해제 (자원 절약)
-    if (els.mapOpenLink) els.mapOpenLink.hidden = true;
-    // 첫 진입 시에만 그리드 렌더
-    if (!els.gridPanel.children.length) renderGrid();
-    // breadcrumb
-    const totalCards = els.gridPanel.children.length;
-    els.breadcrumb.innerHTML = `<span class="bc-item bc-final">🌐 전체 관제 (${totalCards}개 노선)</span>`;
-    // hash + localStorage
-    history.replaceState(null, '', '#all');
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ all: true })); } catch (e) {}
-  }
-
-  function renderGrid() {
-    const frag = document.createDocumentFragment();
-    for (const complex of state.data.complexes) {
-      const complexShort = complex.name.replace(/산단$/, '').replace(/공단$/, '').replace(/수산물$/, '수산물');
-      for (const zone of complex.zones) {
-        for (const dir of ['go', 'return']) {
-          const routeId = zone.commute[dir];
-          if (routeId == null) continue;
-          const url = mapUrl(routeId);
-          const dirLabel = DIR_LABEL[dir];
-
-          const card = document.createElement('div');
-          card.className = 'grid-card';
-
-          const head = document.createElement('div');
-          head.className = 'grid-card-head';
-          const title = document.createElement('span');
-          title.className = 'grid-card-title';
-          title.title = `${complex.name} · ${zone.name} · ${dirLabel}`;
-          title.textContent = `${complexShort} · ${zone.name}`;
-          const dirChip = document.createElement('span');
-          dirChip.className = `grid-card-dir ${dir}`;
-          dirChip.textContent = dirLabel;
-          const open = document.createElement('a');
-          open.className = 'grid-card-open';
-          open.href = url;
-          open.target = '_blank';
-          open.rel = 'noopener';
-          open.title = '새 창에서 열기';
-          open.setAttribute('aria-label', '새 창에서 열기');
-          open.textContent = '↗';
-          head.append(title, dirChip, open);
-
-          const frameWrap = document.createElement('div');
-          frameWrap.className = 'grid-card-frame';
-          const iframe = document.createElement('iframe');
-          iframe.src = url;
-          iframe.loading = 'lazy';
-          iframe.referrerPolicy = 'no-referrer-when-downgrade';
-          iframe.allow = 'geolocation';
-          iframe.title = `${complex.name} ${zone.name} ${dirLabel}`;
-          frameWrap.appendChild(iframe);
-
-          card.append(head, frameWrap);
-          frag.appendChild(card);
-        }
-      }
-    }
-    els.gridPanel.appendChild(frag);
-  }
-
   function updateMap(routeId) {
     const url = mapUrl(routeId);
     if (els.mapOpenLink) {
@@ -268,7 +187,6 @@
   }
 
   function readHash() {
-    if (location.hash === '#all') return { all: true };
     const m = location.hash.match(/^#([^\/]+)\/([^\/]+)\/(go|return)$/);
     if (!m) return null;
     return { complexId: m[1], zoneName: decodeURIComponent(m[2]), direction: m[3] };
@@ -314,17 +232,9 @@
       resetToHome();
     });
 
-    els.allRoutesBtn.addEventListener('click', () => {
-      selectAll();
-    });
-
     window.addEventListener('hashchange', () => {
       const h = readHash();
       if (!h) return;
-      if (h.all) {
-        if (!state.selected || !state.selected.all) selectAll();
-        return;
-      }
       if (
         !state.selected ||
         state.selected.complexId !== h.complexId ||
@@ -356,15 +266,9 @@
   /* ---------- 초기 진입 노선 결정 ---------- */
   function pickInitialSelection() {
     const fromHash = readHash();
-    if (fromHash) {
-      if (fromHash.all) return { all: true };
-      if (isValid(fromHash)) return fromHash;
-    }
+    if (fromHash && isValid(fromHash)) return fromHash;
     const fromStorage = loadLast();
-    if (fromStorage) {
-      if (fromStorage.all) return { all: true };
-      if (isValid(fromStorage)) return fromStorage;
-    }
+    if (fromStorage && isValid(fromStorage)) return fromStorage;
     // 기본값: 첫 산단 > 첫 지역 > go (없으면 return)
     const c = state.data.complexes[0];
     const z = c.zones[0];
@@ -373,7 +277,6 @@
   }
 
   function isValid(sel) {
-    if (sel.all) return true;
     const c = state.data.complexes.find(x => x.id === sel.complexId);
     if (!c) return false;
     const z = c.zones.find(x => x.name === sel.zoneName);
@@ -387,11 +290,7 @@
     renderTree();
     bindEvents();
     const initial = pickInitialSelection();
-    if (initial.all) {
-      selectAll();
-    } else {
-      selectRoute(initial.complexId, initial.zoneName, initial.direction);
-    }
+    selectRoute(initial.complexId, initial.zoneName, initial.direction);
   }
 
   document.addEventListener('DOMContentLoaded', init);
